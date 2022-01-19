@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
 
+$dark-gray: hsl(0, 0%, 63%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$very-dark-gray: hsl(0, 0%, 27%);
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +16,13 @@ body {
     min-height: 100vh;
     position: relative;
     font-family: Spartan, sans-serif;
+    font-size: 12px;
+    background: red;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+@import "./header";
