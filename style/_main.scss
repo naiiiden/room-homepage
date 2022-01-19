@@ -1,7 +1,6 @@
 .slide {
     display: flex;
     flex-direction: column;
-    position: relative;
 
     .img_container {
         height: 50vh;
@@ -71,6 +70,34 @@
 
 @media screen and (min-width: 1024px) {
     .slide {
+        display: flex;
+        flex-direction: row;
+        position: relative;
 
+        .img_container {
+            width: 60%;
+            height: 65vh;
+
+            .mobile_buttons {
+                display: none;
+            }
+        }
+
+        .text_wrapper {
+            width: 40%;
+            height: 65vh;
+            position: relative;
+
+            .desktop_buttons {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                button {
+                    padding: 1.25rem;
+                }
+            }
+        }
     }
 }

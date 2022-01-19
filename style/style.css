@@ -97,6 +97,7 @@ img {
     gap: 4rem;
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
   header .hamburger {
     display: none;
@@ -125,7 +126,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
 }
 
 .slide .img_container {
@@ -204,5 +204,41 @@ img {
   background: black;
   border: none;
   padding: .5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  .slide .img_container {
+    width: 60%;
+    height: 65vh;
+  }
+  .slide .img_container .mobile_buttons {
+    display: none;
+  }
+  .slide .text_wrapper {
+    width: 40%;
+    height: 65vh;
+    position: relative;
+  }
+  .slide .text_wrapper .desktop_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .slide .text_wrapper .desktop_buttons button {
+    padding: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
