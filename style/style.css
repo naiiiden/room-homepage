@@ -35,6 +35,7 @@ img {
             align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
   header .hamburger {
     border: none;
@@ -116,10 +117,6 @@ img {
   }
 }
 
-main {
-  position: relative;
-}
-
 .slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +160,10 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.5rem;
+}
+
+.slide .text_wrapper .desktop_buttons {
+  display: none;
 }
 
 .slide .text_wrapper p {
