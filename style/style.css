@@ -12,7 +12,7 @@ body {
   position: relative;
   font-family: Spartan, sans-serif;
   font-size: 12px;
-  background: red;
+  background: white;
 }
 
 img {
@@ -194,7 +194,6 @@ img {
 
 .slide .text_wrapper a:hover {
   color: #454545;
-  border-bottom: 1px solid white;
 }
 
 .slide .text_wrapper a:hover svg {
@@ -271,16 +270,19 @@ img {
     position: relative;
   }
   .slide .img_container {
-    width: 60%;
+    width: 64.75vw;
     height: 65vh;
   }
   .slide .img_container .mobile_buttons {
     display: none;
   }
   .slide .text_wrapper {
-    width: 40%;
+    width: 40vw;
     height: 65vh;
     position: relative;
+  }
+  .slide .text_wrapper h1 {
+    font-size: 2.5rem;
   }
   .slide .text_wrapper .desktop_buttons {
     display: -webkit-box;
@@ -298,14 +300,17 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .about_container .img_container {
     height: 35vh;
-    width: 36.5%;
+    width: 32.5vw;
   }
   .about_container .text_wrapper {
     height: 35vh;
-    width: 63.5%;
+    width: 30vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
