@@ -282,7 +282,7 @@ img {
     position: relative;
   }
   .slide .text_wrapper h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .slide .text_wrapper .desktop_buttons {
     display: -webkit-box;
@@ -311,6 +311,12 @@ img {
   .about_container .text_wrapper {
     height: 35vh;
     width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slide .text_wrapper h1 {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

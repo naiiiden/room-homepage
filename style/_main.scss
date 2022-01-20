@@ -124,7 +124,7 @@
             position: relative;
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .desktop_buttons {
@@ -154,6 +154,16 @@
             height: 35vh;
             // width: 31.5%;
             width: 30vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .slide {
+        .text_wrapper {
+            h1 {
+                font-size: 2.5rem;
+            }
         }
     }
 }
